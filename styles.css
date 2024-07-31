@@ -91,3 +91,71 @@ html {
   text-align: center;
   font-style: italic;
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+  padding: 10vh 0;
+}
+
+.projects h2 {
+  font-size: var(--font-size-xlarge);
+  color: var(--color-quinary);
+  padding: 2rem;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-0.5rem);
+}
+
+.project-list li {
+  margin: 1rem;
+}
+
+.project-image {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-title {
+  font-size: var(--font-size-medium);
+  color: var(--color-quinary);
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--color-quaternary);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--color-quaternary);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: var(--color-quinary);
+  transform: scale(1.05);
+}
